@@ -1,0 +1,1 @@
+for(let e of document.querySelectorAll(`[data-picker]`)){let t=e.closest(`details, section`)?.querySelector(`table.cmp`);if(!t)continue;let n=[...e.querySelectorAll(`button`)];for(let e of n)e.addEventListener(`click`,()=>{t.dataset.show=e.dataset.col??`0`;for(let t of n)t.setAttribute(`aria-pressed`,String(t===e))})}
